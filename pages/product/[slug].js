@@ -2,7 +2,7 @@ import { useState } from "react"
 import { IoMdHeartEmpty } from "react-icons/io"
 import Wrapper from "@/components/Wrapper"
 import ProductDetailsCarousel from "@/components/ProductDetailsCarousel"
-// import RelatedProducts from "@/components/RelatedProducts"
+import RelatedProducts from "@/components/RelatedProducts"
 import { fetchDataFromApi } from "@/utils/api"
 import { getDiscountedPricePercentage } from "@/utils/helper"
 import ReactMarkdown from "react-markdown"
@@ -212,6 +212,7 @@ const ProductDetails = ({ product, products }) => {
         </div>
 
         {/* <RelatedProducts products={products} /> */}
+        <RelatedProducts />
       </Wrapper>
     </div>
   )
