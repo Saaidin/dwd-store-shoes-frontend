@@ -46,22 +46,17 @@ const ProductDetails = ({ product, products }) => {
             {/* PRODUCT TITLE */}
             <div className="text-[34px] font-semibold mb-2 leading-tight">
               {p.name}
-              {/* Jordan Retro 6 G */}
             </div>
 
             {/* PRODUCT SUBTITLE */}
-            <div className="text-lg font-semibold mb-5">
-              {p.subtitle}
-              {/* Men&apos;s Golf Shoes */}
-            </div>
+            <div className="text-lg font-semibold mb-5">{p.subtitle}</div>
 
             {/* PRODUCT PRICE */}
             <div className="flex items-center">
               <p className="mr-2 text-lg font-semibold">
-                {/* MRP : &#8377;{p.price} */}
-                MRP: &#8377; 19 695.00
+                MRP : &#8377;{p.price}
               </p>
-              {/* {p.original_price && (
+              {p.original_price && (
                 <>
                   <p className="text-base  font-medium line-through">
                     &#8377;{p.original_price}
@@ -71,7 +66,7 @@ const ProductDetails = ({ product, products }) => {
                     off
                   </p>
                 </>
-              )} */}
+              )}
             </div>
 
             <div className="text-md font-medium text-black/[0.5]">
@@ -94,39 +89,6 @@ const ProductDetails = ({ product, products }) => {
 
               {/* SIZE START */}
               <div id="sizesGrid" className="grid grid-cols-3 gap-2">
-                {/* <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
-                  UK 6
-                </div>
-                <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
-                  UK 6
-                </div> */}
                 {p.size.data.map((item, i) => (
                   <div
                     key={i}
@@ -147,9 +109,6 @@ const ProductDetails = ({ product, products }) => {
               {/* SIZE END */}
 
               {/* SHOW ERROR START */}
-              {/* <div className="text-red-600 mt-1">
-                Size selection is required
-              </div> */}
               {showError && (
                 <div className="text-red-600 mt-1">
                   Size selection is required
@@ -196,15 +155,6 @@ const ProductDetails = ({ product, products }) => {
               <div className="text-lg font-bold mb-5">Product Details</div>
               <div className="markdown text-md mb-5">
                 <ReactMarkdown>{p.description}</ReactMarkdown>
-                {/* <p>
-                  Ex? Pede dapibus aliqua? Etiam reprehenderit tempus! Fuga eu
-                  quos! Recusandae? Veniam integer integer, incidunt, massa
-                  magni ex, tenetur vel facilisis, aliquet? Nisi quam, at
-                  nascetur. Ipsa habitant laoreet ligula magni placerat, minim
-                  odio do? Conubia corporis nisl incidunt debitis! Lorem mollit?
-                  Aperiam facere venenatis nullam nostra dignissimos omnis
-                  varius? Mattis pellentesque, torquent consequat.
-                </p> */}
               </div>
             </div>
           </div>
@@ -212,7 +162,6 @@ const ProductDetails = ({ product, products }) => {
         </div>
 
         <RelatedProducts products={products} />
-        {/* <RelatedProducts /> */}
       </Wrapper>
     </div>
   )

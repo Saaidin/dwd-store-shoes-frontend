@@ -54,10 +54,6 @@ const Cart = () => {
                 {cartItems.map((item) => (
                   <CartItem key={item.id} data={item} />
                 ))}
-                {/* <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem /> */}
               </div>
               {/* CART ITEMS END */}
 
@@ -72,7 +68,6 @@ const Cart = () => {
                     </div>
                     <div className="text-md md:text-lg font-medium text-black">
                       &#8377;{subTotal}
-                      {/* MRP: &#8377; 19 695.00 */}
                     </div>
                   </div>
                   <div className="text-sm md:text-md py-5 border-t mt-5">

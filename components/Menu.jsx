@@ -49,22 +49,6 @@ const Menu = ({ showCatMenu, setShowCatMenu, categories }) => {
                         </Link>
                       )
                     })}
-                    {/* {subMenuData.map((submenu) => {
-                      return (
-                        <Link
-                          key={submenu.id}
-                          href={`/`}
-                          onClick={() => setShowCatMenu(false)}
-                        >
-                          <li className="h-12 flex justify-between items-center px-3 hover:bg-black/[0.03] rounded-md">
-                            {submenu.name}
-                            <span className="opacity-50 text-sm">
-                               {`(${c.products.data.length})`} 
-                            </span>
-                          </li>
-                        </Link>
-                      )
-                    })} */}
                   </ul>
                 )}
               </li>

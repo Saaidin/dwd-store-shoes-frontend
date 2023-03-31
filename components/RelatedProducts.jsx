@@ -29,9 +29,6 @@ const RelatedProducts = ({ products }) => {
         {products?.data?.map((product) => (
           <ProductCard key={product?.id} data={product} />
         ))}
-        {/* <ProductCard />
-        <ProductCard />
-        <ProductCard /> */}
       </Carousel>
     </div>
   )
