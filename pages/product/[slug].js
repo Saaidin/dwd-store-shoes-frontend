@@ -53,13 +53,11 @@ const ProductDetails = ({ product, products }) => {
 
             {/* PRODUCT PRICE */}
             <div className="flex items-center">
-              <p className="mr-2 text-lg font-semibold">
-                MRP : &#8377;{p.price}
-              </p>
+              <p className="mr-2 text-lg font-semibold">RM{p.price}</p>
               {p.original_price && (
                 <>
                   <p className="text-base  font-medium line-through">
-                    &#8377;{p.original_price}
+                    RM{p.original_price}
                   </p>
                   <p className="ml-auto text-base font-medium text-green-500">
                     {getDiscountedPricePercentage(p.original_price, p.price)}%
