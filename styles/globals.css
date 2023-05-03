@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap");
+
 :root {
   font-family: "Fauna One", sans-serif;
   font-weight: 400;
@@ -110,7 +112,7 @@
 }
 
 h1 {
-  @apply font-cinzel text-[48px];
+  @apply font-cinzel text-[48px] font-[300];
 }
 
 h2 {
@@ -126,5 +128,5 @@ h4 {
 }
 
 h5 {
-  @apply font-fauna text-[11px];
+  @apply font-fauna text-[11px] font-[500];
 }

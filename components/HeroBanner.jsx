@@ -12,13 +12,11 @@ const SlideImage = ({ src }) => (
       alt="image"
       width={1920}
       height={1080}
+      priority
     />
-    {/* <div className="px-15 md:px-40 py-10 md:py-25 font-cinzel bg-white absolute top-[50%] md:bottom-75 left-0 text-primary-100 text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
-      Shop now
-    </div> */}
-    <div className="absolute bg-black bg-opacity-50  top-[55%] md:left-[5%] md:top-[40%] text-white m-4 p-2 leading-8 z-20">
+    <div className="absolute bg-black bg-opacity-50 top-[55%] md:left-[5%] md:top-[40%] text-white m-4 p-2 leading-9 z-20">
       <div className="text-secondary-200">-- NEW ITEMS</div>
-      <h1>Summer Sale</h1>
+      <h1 className="uppercase leading-[1.167]">Summer Sale</h1>
       <div className="font-bold text-secondary-300 underline">
         Discover More
       </div>
