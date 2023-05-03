@@ -5,7 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["localhost"],
+    domains: ["res.cloudinary.com"],
   },
 }
 
